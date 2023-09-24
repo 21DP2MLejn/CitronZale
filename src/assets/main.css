@@ -44,7 +44,6 @@ button{
     background-color: var(--White);
     transition: all .5s ease;
     border: 3px solid var(--ShinyShamrock);
-    font-family:'Poppins';
     text-transform: uppercase;
     text-align: center;
     line-height: 1;

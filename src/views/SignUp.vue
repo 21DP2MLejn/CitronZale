@@ -1,15 +1,20 @@
 <template>
 <main>
     <div class="login">
+        <div class="header-container">
+            <h2>Log in / Sign up</h2>
+        </div>
         <div class="input-container">
             <input type="text" placeholder="User Name">
             <input type="text" placeholder="E-mail">
             <input type="password" placeholder="Password">
         </div>
-        <div class="button-container">
+        <div class="link-container">
             <router-link :to="{name: 'login'}">
                 <a>Already have an account? Log In</a>
             </router-link>
+        </div>
+        <div class="button-container">         
             <router-link :to="{name: 'welcome'}">
                 <button>Sign Up</button>
             </router-link>
@@ -42,6 +47,30 @@ h1{
         position: absolute;
         top: 21rem;
         left: 43.8rem;
+    }
+
+    h2{
+        font-weight: var(--font-bold);
+        font-size: 32px;
+        left: 7rem;
+        position: absolute;
+    }
+
+    .input-container{
+        position: absolute;
+        top: 10rem;
+        left: 4rem;
+    }
+    .button-container{
+        position: absolute;
+        top: 24.5rem;
+        left: 11.5rem;
+    }
+
+    .link-container{
+        position: absolute;
+        top: 29rem;
+        left: 9.3rem;
     }
 
     .shadow{
