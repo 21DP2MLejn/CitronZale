@@ -1,5 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import Welcome from './views/Welcome.vue';
 </script>
 
 <template>

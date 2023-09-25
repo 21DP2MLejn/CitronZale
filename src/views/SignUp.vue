@@ -27,6 +27,15 @@
         <div class="polygon">
             <h1 class="main">CitronZale</h1>
             <h1 class="shadow">CitronZale</h1>
+            <div class="start-your-journey-container">
+                <h1 class="join-now">Start Your Journey NOW!</h1>
+                <h1 class="join-now-2">Start Your Journey NOW!</h1>
+                <div class="block-container">
+                    <div class="block left"></div>
+                    <div class="block middle"></div>
+                    <div class="block right"></div>
+                </div>
+            </div>    
         </div>
     </div>
 </main>
@@ -43,10 +52,8 @@ export default {
 h1{
         font-size: 110px;
         font-weight: var(--font-bold);
-        transform: rotate(-89.5deg);
         position: absolute;
-        top: 21rem;
-        left: 43.8rem;
+
     }
 
     h2{
@@ -54,6 +61,31 @@ h1{
         font-size: 32px;
         left: 7rem;
         position: absolute;
+    }
+
+    .join-now{
+        font-size: 64px;
+        width: 500px;
+        left: 8rem;
+        top: 10rem;
+    }
+    .join-now-2{
+        font-size: 64px;
+        width: 500px;
+        left: 7.6rem;
+        top: 10rem;
+        opacity: 20%;
+    }
+    .main{
+        top: 21rem;
+        left: 43.8rem;
+        transform: rotate(-89.5deg);
+    }
+    .shadow{
+        opacity: 20%;
+        top: 21rem;
+        left: 43rem;
+        transform: rotate(-89.5deg);
     }
 
     .input-container{
@@ -105,5 +137,31 @@ h1{
         left: -100px;
         top: 0px;
        }
+
+       .block{
+        width: 5rem;
+        height: 11rem;
+        position: absolute;
+        top: 30rem;
+        left: 15rem;
+        background-color: var(--White);
+        display: inline-block;
+        margin: 10px;
+        transform: Skew(-10deg);
+        transition: 0.1s;
+    }
+
+    .middle{
+        left: 22rem;
+    }
+
+    .right{
+        left: 29rem;
+    }
+
+    .block:hover{
+        transform: scale(1.15) skew(-10deg);
+    }
+
 
 </style>

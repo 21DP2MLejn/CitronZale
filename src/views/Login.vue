@@ -1,7 +1,7 @@
 <template>
 <main>
     <div class="login">
-        <div class="header-container">\
+        <div class="header-container">
             <h2>Log in / Sign up</h2>
         </div>
         <div class="input-container">
@@ -26,6 +26,15 @@
         <div class="polygon">
             <h1 class="main">CitronZale</h1>
             <h1 class="shadow">CitronZale</h1>
+            <div class="start-your-journey-container">
+                <h1 class="join-now">Start Your Journey NOW!</h1>
+                <h1 class="join-now-2">Start Your Journey NOW!</h1>
+                <div class="block-container">
+                    <div class="block left"></div>
+                    <div class="block middle"></div>
+                    <div class="block right"></div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -42,10 +51,8 @@ export default {
     h1{
         font-size: 110px;
         font-weight: var(--font-bold);
-        transform: rotate(-89.5deg);
         position: absolute;
-        top: 21rem;
-        left: 43.8rem;
+
     }
 
     h2{
@@ -55,10 +62,29 @@ export default {
         position: absolute;
     }
 
+    .join-now{
+        font-size: 64px;
+        width: 500px;
+        left: 8rem;
+        top: 10rem;
+    }
+    .join-now-2{
+        font-size: 64px;
+        width: 500px;
+        left: 7.6rem;
+        top: 10rem;
+        opacity: 20%;
+    }
+    .main{
+        top: 21rem;
+        left: 43.8rem;
+        transform: rotate(-89.5deg);
+    }
     .shadow{
         opacity: 20%;
         top: 21rem;
         left: 43rem;
+        transform: rotate(-89.5deg);
     }
 
     .image-container{
@@ -88,10 +114,16 @@ export default {
         top: 0px;
     }
 
-    .login-button{
+    .button-container{
         position: absolute;
-        top: 21.5rem;
+        top: 24.5rem;
         left: 11.5rem;
+    }
+
+    .link-container{
+        position: absolute;
+        top: 29rem;
+        left: 9.3rem;
     }
 
     .input-container{
@@ -99,12 +131,29 @@ export default {
         top: 10rem;
         left: 4rem;
     }
-
-    .link-container{
+    .block{
+        width: 5rem;
+        height: 11rem;
         position: absolute;
-        top: 26rem;
-        left: 9.3rem;
+        top: 30rem;
+        left: 15rem;
+        background-color: var(--White);
+        display: inline-block;
+        margin: 10px;
+        transform: Skew(-10deg);
+        transition: 0.1s;
     }
 
+    .middle{
+        left: 22rem;
+    }
+
+    .right{
+        left: 29rem;
+    }
+
+    .block:hover{
+        transform: scale(1.15) skew(-10deg);
+    }
 
 </style>
