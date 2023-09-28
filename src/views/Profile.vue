@@ -1,5 +1,5 @@
 <template>
-    Hi team
+    <Header/>
 </template>
 
 <script>

@@ -8,7 +8,7 @@
             <router-link to="/clubs" class="clubs">Clubs</router-link>
         </div>
             <div class="image-container">
-                <img src="" alt="Logo">
+                <router-link to="/welcome"><a><img class="image-logo" src="../components/images/logo.png" alt="Logo"></a></router-link>
             </div>
             <div class="button-container">
                 <router-link :to="{name: 'profile'}">
@@ -29,6 +29,8 @@ export default {
 </script>
 
 <style scoped>
+
+
     .nav-bar{
         background-color: var(--ShinyShamrock);
         height: 8vh;
@@ -89,5 +91,12 @@ export default {
         right: 0rem;
     }
 
+    .image-logo{
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        left: -3rem;
+        top: -1.4rem;
+    }
 
 </style>
