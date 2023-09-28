@@ -1,25 +1,24 @@
 <template>
 <main>
+    <Header/>
     <div class="container">
-        
     </div>
     <div class="button-container">
-        <router-link :to="{name: 'login'}">
-                <button>Log In</button>
-            </router-link>
-            <router-link :to="{name: 'signup'}">
-                <button>Sign Up</button>
-            </router-link>
-            
+        
     </div>
 
 </main>
 </template>
 
 <script>
-export default {
-    
-}
+    import Header from '../components/Header.vue';
+
+    export default{
+        components:{
+            Header,
+        }
+    }
+
 </script>
 
 <style scoped>

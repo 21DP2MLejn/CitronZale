@@ -126,6 +126,7 @@ h1{
         border-radius: 25px;
         display: flex;
         z-index: 100000;
+        border: 2px solid var(--ShinyShamrock);
     }
 
     .polygon{
@@ -136,6 +137,7 @@ h1{
         position: absolute;
         left: -100px;
         top: 0px;
+        border: 2px solid var(--ShinyShamrock);
        }
 
        .block{
