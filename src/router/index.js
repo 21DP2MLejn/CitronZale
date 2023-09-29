@@ -8,6 +8,7 @@ import AboutUs from '../views/AboutUs.vue'
 import Schedule from '../views/Schedule.vue'
 import Trainings from '../views/Trainings.vue'
 import Clubs from '../views/Clubs.vue'
+import ForgotPassword from '../views/Forgot-Password.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +57,11 @@ const router = createRouter({
       path: '/clubs',
       name: 'clubs',
       component: Clubs
+    },+
+    {
+      path: '/forgot-password',
+      name: 'forgot',
+      component: ForgotPassword
     },
   ]
 })

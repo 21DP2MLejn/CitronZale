@@ -14,6 +14,9 @@
             </router-link>
         </div>
         <div class="link-container">
+            <router-link :to="{name: 'forgot'}">
+                <a class="forgot-password">Forgot Password?</a>
+            </router-link>
             <router-link :to="{name: 'signup'}">
                 <a>Dont have an account? Sign Up</a>
             </router-link>
@@ -65,6 +68,12 @@ export default {
         position: absolute;
     }
 
+    .forgot-password{
+        position: absolute;
+        top: -10rem;
+        left: 2.5rem;
+        text-decoration: underline;
+    }
     .join-now{
         font-size: 64px;
         width: 500px;
