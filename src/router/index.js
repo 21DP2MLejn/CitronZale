@@ -57,7 +57,7 @@ const router = createRouter({
       path: '/clubs',
       name: 'clubs',
       component: Clubs
-    },+
+    },
     {
       path: '/forgot-password',
       name: 'forgot',
