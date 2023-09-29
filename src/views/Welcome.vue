@@ -27,7 +27,9 @@
 </script>
 
 <style scoped>
-
+ html{
+    overflow-x:hidden;
+ }
     .Box{
         width: 16vw;
         height: 16vh;

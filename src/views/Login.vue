@@ -47,6 +47,9 @@ export default {
 </script>
 
 <style scoped>
+    html,body{
+        overflow:hidden;
+    }
 
     h1{
         font-size: 110px;
